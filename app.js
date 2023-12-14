@@ -13,7 +13,7 @@ function displayQR() {
         generateText.innerHTML = qrText.value
         qrText.value = ""
     } else {
-        alert("yapma")
+        alert("Don't leave the box empty.")
         qrCodeBox.classList.add('d-none')
     }
 }
