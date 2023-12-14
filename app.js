@@ -25,10 +25,10 @@ function generateQR() {
 function copyQR() {
     navigator.clipboard.writeText(generateText.innerHTML)
     .then(function () {
-        alert('kopyalandı: ' + generateText.innerHTML )
+        alert('Copied: ' + generateText.innerHTML )
     })
     .catch(function(err) {
-        console.error('metin kkopyalanmadı', err)
+        console.error('Could Not Copy', err)
     });
 }
 
@@ -47,6 +47,6 @@ function downloadQR() {
             document.body.removeChild(a);
         })
         .catch(error => {
-            console.error('İndirme hatası:', error);
+            console.error('DOWNLOAD ERROR:', error);
         });
 }
